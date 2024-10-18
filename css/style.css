@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .btn-contato button,
+.hero-site button {
+    border-radius: 40px;
+    border: #fff 1px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    padding: 40px 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 180px;
+    transition: 0.2s;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+}
+
+header .menu-desktop nav ul {
+    list-style: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.05);
+
+}
+
+header .btn-contato button {
+    width: 150px;
+    height: 50px;
+}
+
+header .btn-contato button:hover,
+.hero-site button:hover {
+    background-color: #E70072;
+    color: #000;
+    transition: 0.9s;
+}
+
+/*ESTILO DO HEADER*/
+
+section.hero-site {
+
+    height: 98vh;
+    background-image: url(../Image/bg-inicio-site..jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-site .interface {
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+    margin: 20px;
+
+}
+
+.hero-site .txt-hero h1 span {
+    font-weight: 600;
+    display: block;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    margin: 15px;
+}
+
+/*ESILO SOBRE O CURSO*/
+section.sobre{
+    padding: 60px 5%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 40px;
+}
+.sobre .txt-sobre{
+    color: white;
+
+}
+.sobre .txt-sobre h2{
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #E70072;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 10px 0;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #E70072;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: .2s;
+}
+
+.txt-sobre .btn-social button:hover{
+    box-shadow: 3px 0px   #E70072;
+    transform: scale(1.05);
+}
+
+/*ESTILO VANTAGENS*/
+
+section.vantagens {
+    padding: 100px 50px;
+}
+
+.vantagens .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    /* Aumente o valor do gap */
+    margin-bottom: 120px;
+    /* Aumente o valor do margin-bottom */
+    margin-top: 8px;
+    /* Adicione um margin-top */
+    padding: auto;
+    max-width: 1900px;
+    max-height: 1900px;
+}
+
+.vantagens .itens-container .img-itens img {
+    max-width: 420px;
+}
+
+.vantagens .itens-container .txt-itens h3 {
+    font-size: 2.9em;
+    line-height: 55px;
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+.itens-container .txt-itens h3 span {
+    font-weight: 300;
+    color: white;
+}
+
+.itens-container .txt-itens p {
+    color: white;
+}
+
+/*ESTILO DO CURIOSIDADES DO DS*/
+
+section.Banner-Animado {
+    padding: 60px 4%;
+    /* Mantendo o padding ajustado */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Para espaçar os itens dentro da seção */
+    margin-bottom:50px;
+    /* Para espaçamento entre seções */
+}
+
+section.Banner-Animado.flex {
+    align-items: center;
+    justify-content: center;
+    margin: 0 45px
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+.Banner-Animado h1 {
+    color: white;
+    font-size: 45px;
+    line-height: 90px;
+}
+
+.Banner-Animado h1 span {
+    color: #E70072;
+    padding: 10px;
+
+}
+
+.Banner-Animado p {
+    color: white;
+    text-align: justify;
+    margin: 20px 0;
+    max-width: 90%;
+    /* Define um limite máximo para a largura do texto */
+    margin-right: 5px;
+    /* Aumenta a distância entre o texto e a imagem */
+}
+
+.Banner-Animado .img-direito img {
+    animation: flutuar 1s ease-in-out infinite alternate;
+    position: relative;
+}
+
+/*ANIMAÇÕES*/
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+    animation: 20s;
+}
+
+/*ESTILO DO MATERIAS DO DS*/
+
+/*TITULO SOLO*/
+h2.titulo-2 {
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 89px;
+}
+
+h2.titulo-2 span {
+    color: #E70072;
+}
+
+/*MATERIAS DE DS*/
+h2.titulo {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #E70072;
+}
+
+section.materias {
+    padding: 40px 4%;
+    align-items: center;
+
+}
+
+.materias .materias-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+
+.materias .materias-box i {
+    font-size: 79px;
+    color: #E70072;
+}
+
+.materias .materias-box p {
+    color: white;
+}
+
+
+.materias .materias-box h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+section.materias .flex {
+    gap: 60px;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto dentro do bloco */
+
+}
+
+.materias .materias-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.322);
+}
+
+/*FOOTER*/
+/* Estilos para o rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-col h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 8px 0;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration:#000;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: none;
+}
+
+.footer-col p, .footer-col a {
+    font-size: 0.9em;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 0.8em;
+}
+
+/* Estilos para a imagem */
+.footer-logo {
+    width: 250px;  /* Defina a largura da imagem */
+    height: auto;  /* Mantém a proporção da altura */
+    margin-top: 10px;
+}
